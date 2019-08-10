@@ -5,5 +5,6 @@
 	1. In meta-xilinx-contrib the version is sumo / thud
 	2. meta-balena has a sumo / thud image. Therefore is compatible with Zynq
 	3. I'm guessing I need to checkout that branch for both poky and openembedded
+	4. Trying out using repo tool to sync branches
 * Will be adding a conf folder to repo with sample bblayers.conf and layer.conf files
 * More machine targets are added through BSPs
