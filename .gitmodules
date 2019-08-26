@@ -1,12 +1,12 @@
-[submodule "poky"]
-	path = poky
+[submodule "layers/poky"]
+	path = layers/poky
 	url = git://git.yoctoproject.org/poky
-[submodule "openembedded-core"]
-	path = openembedded-core
+[submodule "layers/openembedded-core"]
+	path = layers/openembedded-core
 	url = https://github.com/openembedded/openembedded-core.git
-[submodule "meta-xilinx"]
-	path = meta-xilinx
-	url = https://github.com/Xilinx/meta-xilinx.git
-[submodule "meta-openembedded"]
-	path = meta-openembedded
+[submodule "layers/meta-openembedded"]
+	path = layers/meta-openembedded
 	url = https://github.com/openembedded/meta-openembedded.git
+[submodule "layers/meta-xilinx"]
+	path = layers/meta-xilinx
+	url = https://github.com/Xilinx/meta-xilinx.git
