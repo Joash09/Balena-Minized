@@ -2,4 +2,4 @@
 
 echo "Begin build BalenaOS for Xilinx Minized board"
 
-source poky/oe-init-build-env
+source ./layers/poky/oe-init-build-env build
