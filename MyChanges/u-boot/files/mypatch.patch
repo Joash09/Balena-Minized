@@ -1,0 +1,16 @@
+--- a/config/zynq_minized_defconfig	2019-09-04 21:43:50.407469539 +0200
++++ b/config/zynq_minized_defconfig	2019-09-04 21:46:47.660441577 +0200
+@@ -10,6 +10,7 @@
+ CONFIG_FIT=y
+ CONFIG_FIT_SIGNATURE=y
+ CONFIG_FIT_VERBOSE=y
++CONFIG_BOOTCOMMAND="run loadbootenv && run importbootenv && run bootkernel"
+ CONFIG_SPL_STACK_R=y
+ CONFIG_SPL_OS_BOOT=y
+ CONFIG_SYS_PROMPT="Zynq> "
+@@ -63,3 +64,5 @@
+ CONFIG_CI_UDC=y
+ CONFIG_USB_GADGET_DOWNLOAD=y
+ CONFIG_USB_FUNCTION_THOR=y
++CONFIG_OF_EMBED=y
++CONFIG_IMAGE_FORMAT_LEGACY=y
