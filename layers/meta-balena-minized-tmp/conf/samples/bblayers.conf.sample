@@ -14,5 +14,4 @@ BBLAYERS ?= " \
   ${TOPDIR}/../layers/meta-openembedded/meta-perl \
   ${TOPDIR}/../layers/meta-xilinx/meta-xilinx-bsp \
   ${TOPDIR}/../layers/meta-xilinx/meta-xilinx-contrib \
-  ${TOPDIR}/../layers/meta-balena-minized/ \
   "
