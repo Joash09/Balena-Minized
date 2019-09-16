@@ -249,3 +249,8 @@ PACKAGECONFIG_append_pn-nativesdk-qemu = " sdl"
 # track the version of this file when it was generated. This can safely be ignored if
 # this doesn't mean anything to you.
 CONF_VERSION = "1"
+
+# My Additional changes
+# IMAGE_INSTALL_append = " e2fsprogs e2fsprogs-mke2fs"
+# IMAGE_INSTALL_append = " linux-firmware-bcm43430"
+# IMAGE_INSTALL_append = " iw wpa-supplicant"
