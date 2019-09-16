@@ -9,10 +9,10 @@ Repository tracking all my changes to recipes and appends to support BalenaOS on
 
 Finally run
 
-'''bash
+```bash
 chmod +x build.sh
 . ./build.sh
-'''
+```
 
 Image files are located in the build/tmp/deploy/images folder.
 

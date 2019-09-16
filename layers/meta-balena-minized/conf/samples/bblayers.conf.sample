@@ -8,9 +8,13 @@ BBFILES ?= ""
 BBLAYERS ?= " \
   ${TOPDIR}/../layers/poky/meta \
   ${TOPDIR}/../layers/poky/meta-poky \
-  ${TOPDIR}/../layers/poky/meta-yocto-bsp \
   ${TOPDIR}/../layers/meta-openembedded/meta-oe \
+  ${TOPDIR}/../layers/meta-openembedded/meta-networking \
+  ${TOPDIR}/../layers/meta-openembedded/meta-python \
   ${TOPDIR}/../layers/meta-xilinx/meta-xilinx-bsp \
   ${TOPDIR}/../layers/meta-xilinx/meta-xilinx-contrib \
+  ${TOPDIR}/../layers/meta-balena/meta-balena-common \
+  ${TOPDIR}/../layers/meta-balena/meta-balena-warrior \
   ${TOPDIR}/../layers/meta-balena-minized \
+  ${TOPDIR}/../layers/meta-rust \
   "
