@@ -37,6 +37,9 @@
 # This sets the default machine to be qemux86-64 if no other machine is selected:
 # MACHINE ??= "qemux86-64"
 MACHINE ?= "minized-zynq7"
+
+BALENA_STORAGE_minized-zynq7 = "overlay2"
+
 #
 # Where to place downloads
 #
