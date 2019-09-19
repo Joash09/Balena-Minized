@@ -1,16 +1,26 @@
+---
+ configs/zynq_minized_defconfig | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/configs/zynq_minized_defconfig b/configs/zynq_minized_defconfig
+index 8df0736..249bffd 100644
 --- a/configs/zynq_minized_defconfig
 +++ b/configs/zynq_minized_defconfig
-@@ -10,6 +10,7 @@ CONFIG_DISTRO_DEFAULTS=y
+@@ -11,7 +11,7 @@ CONFIG_DISTRO_DEFAULTS=y
  CONFIG_FIT=y
  CONFIG_FIT_SIGNATURE=y
  CONFIG_FIT_VERBOSE=y
+-CONFIG_BOOTCOMMAND="run $modeboot || run distro_bootcmd"
 +CONFIG_BOOTCOMMAND="run loadbootenv && run importbootenv && run bootkernel"
  CONFIG_SPL_STACK_R=y
  CONFIG_SPL_OS_BOOT=y
  CONFIG_SYS_PROMPT="Zynq> "
-@@ -63,3 +64,5 @@ CONFIG_USB_GADGET_PRODUCT_NUM=0x0300
+@@ -64,3 +64,5 @@ CONFIG_USB_GADGET_PRODUCT_NUM=0x0300
  CONFIG_CI_UDC=y
  CONFIG_USB_GADGET_DOWNLOAD=y
  CONFIG_USB_FUNCTION_THOR=y
 +CONFIG_OF_EMBED=y
 +CONFIG_IMAGE_FORMAT_LEGACY=y
+\ No newline at end of file
+-- 
+2.7.4
