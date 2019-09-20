@@ -1,0 +1,11 @@
+--- a/recipes-core/busybox/busybox.inc	2019-09-20 22:08:17.914634987 +0200
++++ b/recipes-core/busybox/busybox.inc	2019-09-20 22:09:56.856935055 +0200
+@@ -347,7 +347,7 @@
+ 	fi
+ }
+ 
+-PTEST_BINDIR = "1"
++PTEST_BINDIR = "0"
+ 
+ do_install_ptest () {
+ 	cp -r ${B}/testsuite ${D}${PTEST_PATH}/
