@@ -1,0 +1,24 @@
+From deb7f5571c4eb0b4ec033d418068d4c26da64cee Mon Sep 17 00:00:00 2001
+From: Dan Collins <[email protected]>
+Date: Tue, 23 Apr 2019 08:47:43 +1200
+Subject: [PATCH] Fixed issue with Xilinx GPIO driver
+
+---
+ drivers/gpio/gpio-xilinx.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/gpio/gpio-xilinx.c b/drivers/gpio/gpio-xilinx.c
+index d81d8cf..6e9c9fb 100644
+--- a/drivers/gpio/gpio-xilinx.c
++++ b/drivers/gpio/gpio-xilinx.c
+@@ -648,7 +648,7 @@ static int xgpio_of_probe(struct platform_device *pdev)
+
+    chip->clk = devm_clk_get(&pdev->dev, "s_axi_aclk");
+    if (IS_ERR(chip->clk)) {
+-       if ((PTR_ERR(chip->clk) != -ENOENT) ||
++       if ((PTR_ERR(chip->clk) != -ENOENT) &&
+                (PTR_ERR(chip->clk) != -EPROBE_DEFER)) {
+            dev_err(&pdev->dev, "Input clock not found\n");
+            return PTR_ERR(chip->clk);
+-- 
+2.7.4
