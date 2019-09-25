@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Begin build BalenaOS for Xilinx Minized board"
+echo "Begin build minimal Linux environment for Xilinx Minized board"
 
 # export MACHINE="minized-zynq7"
 export TEMPLATECONF="../layers/meta-balena-minized/conf/samples/"
