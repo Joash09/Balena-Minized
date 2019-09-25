@@ -1,0 +1,18 @@
+diff --git a/meta-xilinx-contrib/recipes-kernel/linux/linux-xlnx/v2018.3/0004-minized-wifi-bluetooth.cfg b/meta-xilinx-contrib/recipes-kernel/linux/linux-xlnx/v2018.3/0004-minized-wifi-bluetooth.cfg
+index f71e53a..806dfae 100644
+--- a/meta-xilinx-contrib/recipes-kernel/linux/linux-xlnx/v2018.3/0004-minized-wifi-bluetooth.cfg
++++ b/meta-xilinx-contrib/recipes-kernel/linux/linux-xlnx/v2018.3/0004-minized-wifi-bluetooth.cfg
+@@ -14,7 +14,7 @@ CONFIG_CFG80211=y
+ CONFIG_CFG80211_DEFAULT_PS=y
+ CONFIG_CFG80211_CRDA_SUPPORT=y
+ CONFIG_BRCMUTIL=y
+-CONFIG_BRCMFMAC=y
++CONFIG_BRCMFMAC=m
+ CONFIG_BRCMFMAC_PROTO_BCDC=y
+ CONFIG_BRCMFMAC_SDIO=y
+ CONFIG_CRYPTO_BLKCIPHER=y
+@@ -30,4 +30,3 @@ CONFIG_REGMAP_IRQ=y
+ CONFIG_I2C_XILINX=y
+ CONFIG_MFD_DA9062=y
+ CONFIG_REGULATOR_DA9062=y
+-

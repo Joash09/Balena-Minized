@@ -253,6 +253,7 @@ CONF_VERSION = "1"
 # My Additional changes
 IMAGE_INSTALL_append = " e2fsprogs e2fsprogs-mke2fs"
 IMAGE_INSTALL_append = " linux-firmware-bcm43430"
+# IMAGE_INSTALL_append = " bcm43430-fmac"
 # IMAGE_INSTALL_append = " brcmfmac"
-# IMAGE_INSTALL_append = " iw wpa-supplicant"
+IMAGE_INSTALL_append = " iw wpa-supplicant"
 # MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "brcmfmac"
