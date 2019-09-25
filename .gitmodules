@@ -1,12 +1,25 @@
 [submodule "layers/poky"]
 	path = layers/poky
 	url = git://git.yoctoproject.org/poky
+	branch = warrior
 [submodule "layers/openembedded-core"]
 	path = layers/openembedded-core
 	url = https://github.com/openembedded/openembedded-core.git
+	branch = warrior
 [submodule "layers/meta-openembedded"]
 	path = layers/meta-openembedded
 	url = https://github.com/openembedded/meta-openembedded.git
+	branch = warrior
 [submodule "layers/meta-xilinx"]
 	path = layers/meta-xilinx
 	url = https://github.com/Xilinx/meta-xilinx.git
+	branch = warrior
+[submodule "layers/meta-balena"]
+	path = layers/meta-balena
+	url = https://github.com/balena-os/meta-balena.git
+[submodule "layers/oe-meta-go"]
+	path = layers/oe-meta-go
+	url = https://github.com/balena-os/oe-meta-go.git
+[submodule "layers/meta-rust"]
+	path = layers/meta-rust
+	url = https://github.com/meta-rust/meta-rust.git
